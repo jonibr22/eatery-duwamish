@@ -21,7 +21,7 @@
     <%--Checkbox Event Configuration--%>
     <script type="text/javascript">
         function ConfigureCheckboxEvent() {
-            $('.checkDelete input').change(function () {
+            $('#htblDish').on('change', '.checkDelete input', function () {
                 var parent = $(this).parent();
                 var value = $(parent).attr('data-value');
                 var deletedList = [];
